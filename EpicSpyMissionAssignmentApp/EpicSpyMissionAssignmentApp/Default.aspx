@@ -13,7 +13,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div style="width: 156px">
             <asp:Image ID="Image1" runat="server" Height="190px" ImageUrl="epic-spies-logo.jpg" />
         </div>
         <h1 class="auto-style1">Spy New Assignment Form</h1>
@@ -21,6 +21,7 @@
             <strong>Spy Code Name:
             </strong>
             <asp:TextBox ID="spyNameTextBox" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </p>
         <p class="auto-style1">
             <strong>New Assignment Name:</strong>
@@ -40,8 +41,7 @@
             </asp:Calendar>
         </p>
         <p class="auto-style1">
-            Start Date of New Assignment:</p>
-        <asp:Calendar ID="newstartCalendar" runat="server" BackColor="White" BorderColor="#333333" BorderWidth="1px" Font-Names="Perpetua Titling MT" Font-Size="9pt" ForeColor="Black" Height="134px" NextPrevFormat="FullMonth" Width="142px">
+            Start Date of New Assignment:<asp:Calendar ID="newstartCalendar" runat="server" BackColor="White" BorderColor="#333333" BorderWidth="1px" Font-Names="Perpetua Titling MT" Font-Size="9pt" ForeColor="Black" Height="134px" NextPrevFormat="FullMonth" Width="142px">
             <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
             <DayStyle BorderStyle="Inset" />
             <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
@@ -50,6 +50,7 @@
             <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333333" />
             <TodayDayStyle BackColor="#CCCCCC" />
         </asp:Calendar>
+        </p>
         <br />
         <span class="auto-style1">Projected End Date of New Assignment:</span><br />
         <asp:Calendar ID="newendCalendar" runat="server" BackColor="White" BorderColor="#333333" BorderWidth="1px" Font-Names="Perpetua Titling MT" Font-Size="9pt" ForeColor="Black" Height="130px" NextPrevFormat="FullMonth" Width="101px">

@@ -13,8 +13,8 @@ namespace EpicSpyMissionAssignmentApp
         {
             if (!IsPostBack)
             {
-                spyNameTextBox.Text = "Mac Hacker";
-                newassignTextBox.Text = "Project: Bulldozer";
+                spyNameTextBox.Text = "Rosalina";
+                newassignTextBox.Text = "Project: Go Kart";
                 prevCalendar.SelectedDate = DateTime.Now.Date;
                 newstartCalendar.SelectedDate = prevCalendar.SelectedDate.AddDays(14);
             }
