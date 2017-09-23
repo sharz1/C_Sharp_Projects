@@ -8,15 +8,22 @@ namespace Darts
 {
     public class Dart
     {
-        Random random = new Random();
-
         public int Wedge { get; set; }
         public int Band { get; set; }
 
+        private Random _random;
+
+        public Dart(Random random)
+        {
+            _random = random;
+        }
+
+
+
         public void Throw()
         {
-            Wedge = random.Next(21);
-            Band = random.Next(20);
+            Wedge = _random.Next(21);
+            Band = _random.Next(20);
         }
 
     }

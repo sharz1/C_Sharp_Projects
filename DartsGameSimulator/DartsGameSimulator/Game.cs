@@ -8,31 +8,30 @@ namespace DartsGameSimulator
 {
     public class Game
     {
-        public int Player1Score { get; set; }
-        public int Player2Score { get; set; }
+        public Player _player1;
+        public Player _player2;
+        private Random _random;
 
-        Dart dart1 = new Dart();
-        Dart dart2 = new Dart();
-        Dart dart3 = new Dart();
+        public Game(string player1Name, string player2Name)
+        {
+            _player1 = new Player { Name = player1Name };
+            _player2 = new Player { Name = player2Name };
 
+            _random = new Random();
+        }
         public void PlayRound()
         {
-            ThrowDarts();
-            Player1Score += Score.HitScore(dart1.Wedge,dart1.Band) 
-                    + Score.HitScore(dart2.Wedge,dart2.Band)
-                    + Score.HitScore(dart3.Wedge, dart3.Band);
-
-            ThrowDarts();
-            Player2Score += Score.HitScore(dart1.Wedge, dart1.Band)
-                    + Score.HitScore(dart2.Wedge, dart2.Band)
-                    + Score.HitScore(dart3.Wedge, dart3.Band);
-
+            ThrowDarts(_player1);
+            ThrowDarts(_player2);
         }
-        private void ThrowDarts()
+        private void ThrowDarts(Player player)
         {
-            dart1.Throw();
-            dart2.Throw();
-            dart3.Throw();
+            for (int i = 0; i < 3; i++)
+            {
+                Dart dart = new Dart(_random);
+                dart.Throw();
+                player.Score += Score.HitScore(dart.Wedge, dart.Band);
+            }
         }
         
     }

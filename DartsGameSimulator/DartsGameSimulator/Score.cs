@@ -11,13 +11,13 @@ namespace DartsGameSimulator
         {
             //If dart hits bullseye area (Wedge:0), check if outer or inner bullseye
             if (Wedge == 0)
-            {   //Inner bullseye (50 pts) if band == 0, otherwise - outer (25pts)
+            {
                 if (Band == 0) return 50;
                 else return 25;
             }
             //If dart hits any other wedge, check for double or triple band
             else if (Band == 2 || Band == 3) return Wedge * Band;
-            
+         
             //If band is not double or triple, just return Wedge as points
             else return Wedge;
         }

@@ -29,12 +29,25 @@
             <asp:Button ID="PlayButton" runat="server" OnClick="Button1_Click" Text="Play!" />
             <br />
             <br />
-            Player 1 </strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
-            <asp:Label ID="player1Label" runat="server" Text="0"></asp:Label>
+            Player 1 
+            <br />
+            </strong>
+            <asp:TextBox ID="P1TextBox" runat="server"></asp:TextBox>
+            <br />
+            </span> </span>
+            <asp:Label ID="p1nameLabel" runat="server"></asp:Label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+            <asp:Label ID="player1Label" runat="server"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
             <br />
-            <span class="auto-style2"><strong>Player 2</strong></span><br />
-&nbsp;<asp:Label ID="player2Label" runat="server" Text="0"></asp:Label>
+            <span class="auto-style2"><strong>Player 2<br />
+            </strong>
+            <asp:TextBox ID="P2TextBox" runat="server"></asp:TextBox>
+            <br />
+            </span>
+            <asp:Label ID="p2nameLabel" runat="server"></asp:Label>
+            <br />
+            <asp:Label ID="player2Label" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
