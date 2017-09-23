@@ -18,7 +18,7 @@ namespace DartsGameSimulator
             //If dart hits any other wedge, check for double or triple band
             else if (Band == 2 || Band == 3) return Wedge * Band;
          
-            //If band is not double or triple, just return Wedge as points
+            //If band is not double or triple, return Wedge # as points
             else return Wedge;
         }
     }
