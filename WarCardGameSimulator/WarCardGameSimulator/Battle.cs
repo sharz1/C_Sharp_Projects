@@ -27,12 +27,12 @@ namespace WarCardGameSimulator
             {
                 // bonus battle (move to index 2 (or1) --only if they have enough cards
                 // if last card left in one player's hand is same in battle, player with most cards wins
-                if (Index + 2 <= player1.Hand.Count && Index + 2 <= player1.Hand.Count)
+                if (Index + 2 < player1.Hand.Count && Index + 2 < player2.Hand.Count)
                 {
                     Index += 2;
                     PlayBattle(player1, player2);
                 }
-                else if (Index + 1 <= player1.Hand.Count && Index + 1 <= player1.Hand.Count)
+                else if (Index + 1 < player1.Hand.Count && Index + 1 < player2.Hand.Count)
                 {
                     Index += 1;
                     PlayBattle(player1, player2);
